@@ -1,1 +1,3 @@
 __pycache__
+
+data_storage/1_dirty/*.csv
