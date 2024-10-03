@@ -1,0 +1,18 @@
+Attribute,Conversion Type,Null value,Remove Missing/Invalid?
+DTOBITO,ignore,nan,True
+ESTADO,ignore,nan,True
+ANO,ignore,nan,True
+CAUSABAS,ignore,nan,True
+SEXO,categorical,ignorado,False
+RACACOR,categorical,ignorado,False
+ESTCIV,categorical,ignorado,False
+ESC,categorical,ignorado,False
+ESC2010,categorical,ignorado,False
+ESCFALAGR1,categorical,ignorado,False
+LOCOCOR,categorical,ignorado,False
+DTNASC,date,nan,False
+IDADE,age,1.919191,True
+OCUP,ocupation,nan,False
+CODMUNRES,city_codes,numeric,True
+CODMUNOCOR,city_codes,numeric,True
+NATURAL,numeric,nan,False

@@ -69,38 +69,38 @@ conversion_dictionaries = {
         "11": "Fundamental II Incompleto ou Inespecífico",
         "12": "Ensino Médio Incompleto ou Inespecífico"
     },
-    "ESCMAE": {
-        "1": "Nenhuma",
-        "2": "de 1 a 3 anos",
-        "3": "de 4 a 7 anos",
-        "4": "de 8 a 11 anos",
-        "5": "12 anos e mais",
-        "9": "Ignorado"
-    },
-    "ESCMAE2010": {
-        "0": "Sem escolaridade",
-        "1": "Fundamental I (1ª a 4ª série)",
-        "2": "Fundamental II (5ª a 8ª série)",
-        "3": "Médio (antigo 2º Grau)",
-        "4": "Superior incompleto",
-        "5": "Superior completo",
-        "9": "Ignorado"
-    },
-    "ESCMAEAGR1": {
-        "00": "Sem escolaridade",
-        "01": "Fundamental I Incompleto",
-        "02": "Fundamental I Completo",
-        "03": "Fundamental II Incompleto",
-        "04": "Fundamental II Completo",
-        "05": "Ensino Médio Incompleto",
-        "06": "Ensino Médio Completo",
-        "07": "Superior Incompleto",
-        "08": "Superior Completo",
-        "09": "Ignorado",
-        "10": "Fundamental I Incompleto ou Inespecífico",
-        "11": "Fundamental II Incompleto ou Inespecífico",
-        "12": "Ensino Médio Incompleto ou Inespecífico"
-    },
+    # "ESCMAE": {
+    #     "1": "Nenhuma",
+    #     "2": "de 1 a 3 anos",
+    #     "3": "de 4 a 7 anos",
+    #     "4": "de 8 a 11 anos",
+    #     "5": "12 anos e mais",
+    #     "9": "Ignorado"
+    # },
+    # "ESCMAE2010": {
+    #     "0": "Sem escolaridade",
+    #     "1": "Fundamental I (1ª a 4ª série)",
+    #     "2": "Fundamental II (5ª a 8ª série)",
+    #     "3": "Médio (antigo 2º Grau)",
+    #     "4": "Superior incompleto",
+    #     "5": "Superior completo",
+    #     "9": "Ignorado"
+    # },
+    # "ESCMAEAGR1": {
+    #     "00": "Sem escolaridade",
+    #     "01": "Fundamental I Incompleto",
+    #     "02": "Fundamental I Completo",
+    #     "03": "Fundamental II Incompleto",
+    #     "04": "Fundamental II Completo",
+    #     "05": "Ensino Médio Incompleto",
+    #     "06": "Ensino Médio Completo",
+    #     "07": "Superior Incompleto",
+    #     "08": "Superior Completo",
+    #     "09": "Ignorado",
+    #     "10": "Fundamental I Incompleto ou Inespecífico",
+    #     "11": "Fundamental II Incompleto ou Inespecífico",
+    #     "12": "Ensino Médio Incompleto ou Inespecífico"
+    # },
     "ESTCIV": {
         "1": "Solteiro",
         "2": "Casado",
@@ -109,14 +109,14 @@ conversion_dictionaries = {
         "5": "União consensual",
         "9": "Ignorado"
     },
-    "ESTCIVIL": {
-        "1": "Solteiro",
-        "2": "Casado",
-        "3": "Viúvo",
-        "4": "Separado judicialmente",
-        "5": "União consensual",
-        "9": "Ignorado"
-    },
+    # "ESTCIVIL": {
+    #     "1": "Solteiro",
+    #     "2": "Casado",
+    #     "3": "Viúvo",
+    #     "4": "Separado judicialmente",
+    #     "5": "União consensual",
+    #     "9": "Ignorado"
+    # },
     # "EXAME": {
     #     "1": "Sim",
     #     "2": "Não",
@@ -140,34 +140,34 @@ conversion_dictionaries = {
     #     "8": "Múltiplas fontes",
     #     "9": "Ignorado"
     # },
-    "GESTACAO": {
-        "1": "Menos de 22 semanas",
-        "2": "22 a 27 semanas",
-        "3": "28 a 31 semanas",
-        "4": "32 a 36 semanas",
-        "5": "37 a 41 semanas",
-        "6": "42 e + semanas"
-    },
-    "GRAVIDEZ": {
-        "1": "única",
-        "2": "dupla",
-        "3": "tripla e mais",
-        "9": "ignorada"
-    },
-    "INSTRUCAO": {
-        "0": "Ignorado",
-        "1": "Nenhuma",
-        "2": "Primeiro grau",
-        "3": "Segundo grau",
-        "4": "Superior"
-    },
-    "LOCACID": {
-        "0": "Ignorado",
-        "1": "Via Pública",
-        "2": "Domicílio",
-        "3": "Outro",
-        "4": "Local de trabalho"
-    },
+    # "GESTACAO": {
+    #     "1": "Menos de 22 semanas",
+    #     "2": "22 a 27 semanas",
+    #     "3": "28 a 31 semanas",
+    #     "4": "32 a 36 semanas",
+    #     "5": "37 a 41 semanas",
+    #     "6": "42 e + semanas"
+    # },
+    # "GRAVIDEZ": {
+    #     "1": "única",
+    #     "2": "dupla",
+    #     "3": "tripla e mais",
+    #     "9": "ignorada"
+    # },
+    # "INSTRUCAO": {
+    #     "0": "Ignorado",
+    #     "1": "Nenhuma",
+    #     "2": "Primeiro grau",
+    #     "3": "Segundo grau",
+    #     "4": "Superior"
+    # },
+    # "LOCACID": {
+    #     "0": "Ignorado",
+    #     "1": "Via Pública",
+    #     "2": "Domicílio",
+    #     "3": "Outro",
+    #     "4": "Local de trabalho"
+    # },
     "LOCOCOR": {
         "1": "hospital",
         "2": "outros estabelecimentos de saúde",
@@ -197,16 +197,16 @@ conversion_dictionaries = {
     #     # Ocupation doesn't have a dictionary that fits here,
     #     # it's handled later
     # },
-    "OBITOFE1": {
-        "0": "Ignorado",
-        "1": "Sim",
-        "2": "Não"
-    },
-    "OBITOFE2": {
-        "0": "Ignorado",
-        "1": "Sim",
-        "2": "Não"
-    },
+    # "OBITOFE1": {
+    #     "0": "Ignorado",
+    #     "1": "Sim",
+    #     "2": "Não"
+    # },
+    # "OBITOFE2": {
+    #     "0": "Ignorado",
+    #     "1": "Sim",
+    #     "2": "Não"
+    # },
     # "OBITOPARTO": {
     #     "1": "antes",
     #     "2": "durante",
@@ -225,17 +225,17 @@ conversion_dictionaries = {
     #     "3": "Banco SEADE",
     #     "9": "Ignorado"
     # },
-    "PARTO": {
-        "1": "vaginal",
-        "2": "cesáreo",
-        "9": "Ignorado"
-    },
-    "QTDFILMORT": {
-        "9": "Ignorado"
-    },
-    "QTDFILVIVO": {
-        "9": "Ignorado"
-    },
+    # "PARTO": {
+    #     "1": "vaginal",
+    #     "2": "cesáreo",
+    #     "9": "Ignorado"
+    # },
+    # "QTDFILMORT": {
+    #     "9": "Ignorado"
+    # },
+    # "QTDFILVIVO": {
+    #     "9": "Ignorado"
+    # },
     "RACACOR": {
         "1": "Branca",
         "2": "Preta",
