@@ -82,7 +82,21 @@ def update_attribute_values(table_dir, new_data_list, lang='BR', return_df=False
     return
 
 
-def convert_values_table_to_percentages(values_table, dataframe_lens):
+def get_single_attribute_values(table_dir, attribute, lang="BR"):
+    df = pd.read_csv(f"{table_dir}/attributes_values_{lang}.csv", index_col=False)
+
+    # Search for the row where the first column (attribute name) matches the input
+    attribute_values = df[df[df.columns[0]] == attribute]
+
+    # If the attribute exists, return the row as a dictionary or Series
+    if not attribute_values.empty:
+        return attribute_values.iloc[0].to_list()
+    
+    # If the attribute is not found, return None or a message
+    return f"Attribute '{attribute}' not found in the table."
+
+
+def convert_values_table_to_percentages(values_table, dataframe_lens, table_dir, lang):
     # dataframe_lens should be dataframe_lens = {'original': value, 'current': value}
     values_table_percent = values_table.copy()
 
@@ -93,10 +107,9 @@ def convert_values_table_to_percentages(values_table, dataframe_lens):
         rows were removed
     '''
     cleaning_cols = get_values_table_columns()[1:4]
-    preprocessed_col = get_values_table_columns()[-2:-1]
-    removed_col = get_values_table_columns()[-1:]
+    preprocessing_cols = get_values_table_columns()[-2:]
 
-    print(f"Cols: {cleaning_cols, preprocessed_col, removed_col}")
+    print(f"Cols: {cleaning_cols, preprocessing_cols}")
 
     for idx, row in values_table_percent.iterrows():
         for col in values_table_percent.columns[1:]:
@@ -105,18 +118,15 @@ def convert_values_table_to_percentages(values_table, dataframe_lens):
                 values_table_percent.at[idx, col] = min(row[col], dataframe_lens['original'])
                 values_table_percent.at[idx, col] = (values_table_percent.at[idx, col] / dataframe_lens['original']) * 100
             # Check if the column belongs to preprocessed columns
-            elif col in preprocessed_col:
+            elif col in preprocessing_cols:
                 # Apply the min with 'current' dataframe length - removed values and convert to percentage
-                removed_value = row[removed_col[0]] if removed_col[0] in row else 0
-                values_table_percent.at[idx, col] = min(row[col], dataframe_lens['current'] - removed_value)
-                values_table_percent.at[idx, col] = (values_table_percent.at[idx, col] / (dataframe_lens['current'])) * 100
-            elif col in removed_col:
-                # Apply the min with 'current' dataframe length - removed values and convert to percentage
-                removed_value = row[removed_col[0]] if removed_col[0] in row else 0
                 values_table_percent.at[idx, col] = min(row[col], dataframe_lens['current'])
                 values_table_percent.at[idx, col] = (values_table_percent.at[idx, col] / (dataframe_lens['current'])) * 100
             # Format the result to 2 decimal places
             values_table_percent.at[idx, col] = '{:.2f}'.format(values_table_percent.at[idx, col])
+    
+    # Save the updated DataFrame back to the CSV
+    values_table_percent.to_csv(f"{table_dir}/attributes_values_{lang}_percentages.csv", index=False)
 
     return values_table_percent
 
@@ -127,4 +137,4 @@ def get_attributes_values_table(table_dir, percentage=False, dataframe_lens=None
         return pd.read_csv(f"{table_dir}/attributes_values_{lang}.csv")
     else:
         attributes_values_table = pd.read_csv(f"{table_dir}/attributes_values_{lang}.csv")
-        return convert_values_table_to_percentages(attributes_values_table, (dataframe_lens))
+        return convert_values_table_to_percentages(attributes_values_table, dataframe_lens, table_dir, lang)
