@@ -1,6 +1,7 @@
 # datasus-suicide-ts-dataset
-Repository made to facilitate time series analysis on Brazil's daily suicide cases, which are provided by DATASUS 
-Repositório criado para facilitar a análise de séries temporais sobre os casos diários de suicídio no Brasil, fornecidos pelo DATASUS
+Repository made to facilitate time series analysis on Brazil's daily suicide cases, which are provided by DATASUS.
+
+Repositório criado para facilitar a análise de séries temporais sobre os casos diários de suicídio no Brasil, fornecidos pelo DATASUS.
 
 
 ## Folder structure / Estrutura das pastas:
