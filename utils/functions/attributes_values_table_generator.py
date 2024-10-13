@@ -2,8 +2,8 @@ import pandas as pd
 
 attributes_values_info_en = [
     'Attribute',
-    'Missing', 
-    'Nulls/Invalid', 
+    'Missing/Nulls', 
+    'Invalid', 
     'Valid', 
     'Preprocessed', 
     'Removed'
@@ -11,8 +11,8 @@ attributes_values_info_en = [
 
 attributes_values_info_br = [
     'Atributo',
-    'Faltantes', 
-    'Nulos/Inválidos', 
+    'Faltantes/Nulos', 
+    'Inválidos', 
     'Válidos', 
     'Tratados', 
     'Removidos'
