@@ -1,5 +1,5 @@
 __pycache__
 
-data_storage/1_dirty/*.csv
+data_storage/**/*.csv
 
 config.py
