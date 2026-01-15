@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import seaborn as sns
+# import seaborn as sns
 import numpy as np
 
 # Color blindness transformation matrices
@@ -39,8 +39,8 @@ def generate_gradient_palette(start_hex, end_hex, n_colors=8):
 # Function to generate and display color palettes with colorblind simulation
 def display_colorblind_palettes(start_hex, end_hex):
     # Monochromatic palettes
-    monochromatic_palette_start = sns.light_palette(start_hex, n_colors=8, reverse=False)
-    monochromatic_palette_end = sns.light_palette(end_hex, n_colors=8, reverse=False)
+    # monochromatic_palette_start = sns.light_palette(start_hex, n_colors=8, reverse=False)
+    # monochromatic_palette_end = sns.light_palette(end_hex, n_colors=8, reverse=False)
 
     # Gradient palette
     gradient_palette = generate_gradient_palette(start_hex, end_hex, n_colors=8)
