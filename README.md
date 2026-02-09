@@ -3,6 +3,8 @@ Repository made to facilitate time series analysis on Brazil's daily suicide cas
 
 Repositório criado para facilitar a análise de séries temporais sobre os casos diários de suicídio no Brasil, fornecidos pelo DATASUS.
 
+## DSW 2024
+https://sol.sbc.org.br/index.php/dsw/article/view/30611/30414
 
 ## Folder structure / Estrutura das pastas:
 
